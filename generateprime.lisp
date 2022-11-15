@@ -19,7 +19,6 @@
         (setq n (- n 1))            ;decrements given n by 1 until when condition is met
         (setq k 2)                  ;sets all necesarry variables back to original value
         (setq x 0)
-        (setq h n)
         (when (= n 1)               ;1 has been reached; thus, evaluation breaks
             (terpri)
             (format t "Total Number of Prime Numbers: ")(return a))     ;prints counter
