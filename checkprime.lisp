@@ -1,9 +1,9 @@
-(defun generateprime(n)
-    (setq k 2)
-    (setq a n)
-    (setq x 0)
+(defun generateprime(n)     ;define generateprime function with paramater accepting any integer values
+    (setq k 2)              ;initialize variables to be used  ; k is the program's divisor
+    (setq a n)              ;prime number counter
+    (setq x 0)              ;flag
 
-    (format t "~%Prime Numbers from 1 to 1000: ~%")
+    (format t "~%Prime Numbers from 1 to ~a: ~%" n) 
     (terpri)
 
     (loop 
@@ -19,6 +19,7 @@
         (setq n (- n 1))
         (setq k 2)
         (setq x 0)
+        (setq h n)
         (when (= n 1)
             (terpri)
             (format t "Total Number of Prime Numbers: ")(return a))
