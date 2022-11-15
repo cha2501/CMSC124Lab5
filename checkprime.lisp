@@ -1,9 +1,10 @@
 (defun generateprime(n)
     (setq k 2)
-    (setq a 0)
+    (setq a n)
     (setq x 0)
 
-    (format t "Prime Numbers from 1 to 1000: ~%")
+    (format t "~%Prime Numbers from 1 to 1000: ~%")
+    (terpri)
 
     (loop 
         (loop
@@ -13,12 +14,14 @@
         )
         (if (> x 0)
             (format t " ~a ~%" n)
-            (setq a (+ a 1))
+            (setq a (- a 1))
         )
         (setq n (- n 1))
         (setq k 2)
         (setq x 0)
-        (when (= n 1)(return "END"))
+        (when (= n 1)
+            (terpri)
+            (format t "Total Number of Prime Numbers: ")(return a))
     )
 )
 
